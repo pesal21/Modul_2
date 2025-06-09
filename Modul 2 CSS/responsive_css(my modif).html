@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1{
+            font-size: 50pt;
+            text-align: center;
+        }
+        body{
+            background-color: #2196F3;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        /* Responsive untuk layar kecil */
+        @media only screen and (max-width: 600px) {
+            h1{
+            font-size: 20pt;
+            text-align: center;
+        }
+            body{
+                background-color: red;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+                /* 1 kolom */
+            }
+        }
+    </style>
+    </head>
+<body>
+    <h1>Member Eskicing</h1>
+    <div class="grid-container">
+        <div class="grid-item">Pesal</div>
+        <div class="grid-item">Wenka</div>
+        <div class="grid-item">Ojan</div>
+        </div>
+    </body>
+
+</html>
